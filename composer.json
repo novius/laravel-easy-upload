@@ -1,0 +1,36 @@
+{
+    "name": "novius/laravel-easy-upload",
+    "description": "This packages makes it way easier to deal with file uploads and src",
+    "keywords": [
+        "Novius",
+        "Laravel",
+        "Upload"
+    ],
+    "type": "library",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Cyril Garsaud",
+            "email": "cyril.garsaud@gmail.com",
+            "homepage": "https://novius.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Novius\\EasyUpload\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Novius\\EasyUpload\\EasyUploadServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
