@@ -39,7 +39,8 @@ Possible options are:
 
 ```html
 {{ Upload::input([
-    'name' => 'avatar_src',
+    'name' => 'avatar_src', // default: file_src
+    'attribute' => 'data-name', // default: name
     'value' => 'upload/my-image-1234.jpg',
     'accept' => '.pdf,.gif,image/png,image/jpeg',
     'class' => 'any-class-you-want or-several-at-the-same-time'

@@ -1,8 +1,9 @@
 <input type="hidden"
-       name="{{ $name }}"
+       {{ $attribute ?? 'name' }}="{{ $name }}"
        value="{{ $value ?? null }}">
 <input type="file"
        onchange="{{ $id = uniqid('easyupload') }}(this)"
+       class="{{ $class ?? null }}"
        accept="{{ $accept ?? null }}">
 
 <script>
