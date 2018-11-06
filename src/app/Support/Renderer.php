@@ -18,4 +18,18 @@ class Renderer
 	            ->render()
         );
     }
+
+    public static function link($options = [])
+    {
+        $options += [
+            'name' => 'file_src',
+            'link_attributes' => 'target="_blank"',
+        ];
+
+        return new HtmlString(
+            view('easyupload::link')
+                ->with($options)
+                ->render()
+        );
+    }
 }
