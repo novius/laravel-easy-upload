@@ -42,11 +42,15 @@ Possible options are:
     'name' => 'avatar_src', // default: file_src
     'attribute' => 'data-name', // default: name
     'value' => 'upload/my-image-1234.jpg',
-    'accept' => '.pdf,.gif,image/png,image/jpeg',
     'class' => 'any-class-you-want or-several-at-the-same-time'
 ]) }}
 
 {{ Upload::link([ // show the uploaded file link
     'link_attributes' => 'class="my-link"',
+    'accept' => '.pdf,.zip',
+]) }}
+
+{{ Upload::image([ // preview the uploaded picture
+    'accept' => 'image/*',
 ]) }}
 ```
