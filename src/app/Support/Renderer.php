@@ -32,4 +32,17 @@ class Renderer
                 ->render()
         );
     }
+
+    public static function image($options = [])
+    {
+        $options += [
+            'name' => 'file_src',
+        ];
+
+        return new HtmlString(
+            view('easyupload::image')
+                ->with($options)
+                ->render()
+        );
+    }
 }
